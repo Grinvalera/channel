@@ -1,0 +1,66 @@
+body{
+    background: linear-gradient(to top, #fefcea, #f1da36);
+    text-align: center;
+}
+.section{
+    margin-left: 4.5cm;
+    margin-right: 4.5cm;
+    border: 1px solid black;
+    background: linear-gradient(to top, #fefcea, #f136ee);
+    border-radius: 10px
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+div{
+    outline: 18px;
+    outline-style: auto;
+    outline-color: lightskyblue;
+   
+}
+.bloock1{ 
+    display: inline-flex;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+
+}
+.bloock2{
+    display: inline-flex;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.bloock3{
+    display: inline-flex;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.monday{
+    margin: 1.5cm;    
+}
+.tuesday{
+    margin: 1.5cm;
+}
+.wednesday{
+    margin: 1.5cm;
+}
+.thursday{
+    margin: 1.5cm;
+}
+.friday{
+    margin: 1.5cm;
+}
+.saturday{
+    margin: 1.5cm;
+}
+
+.sunday{
+    margin-left: 14cm;
+    margin-right: 14cm;
+
+}
+

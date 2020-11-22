@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'my.css' %}">
+    <title>Телепрограмма каналу 3+3</title>
+</head>
+<body>
+<div class="section">
+    <h1>Телеканал "3+3"</h1>
+    <h1>#ЗалишайсяВдома</h1>
+</div>
+<div class="bloock1">
+    <div class="monday">
+        <h2>Телепрограма на понеділок</h2>
+        {% for i in monday %}
+            <p>{{ i.time_program }} <b>{{ i.name_program }}</b> ({{ i.program_type }})</p>
+        {% endfor %}
+    </div>
+    <div class="tuesday">
+        <h2>Телепрограма на вівторок</h2>
+        {% for i in tuesday %}
+            <p>{{ i.time_program }} <b>{{ i.name_program }}</b> ({{ i.program_type }})</p>
+        {% endfor %}
+    </div>
+</div>
+<div class="bloock2">
+    <div class="wednesday">
+        <h2>Телепрограма на середу</h2>
+        {% for i in wednesday %}
+            <p>{{ i.time_program }} <b>{{ i.name_program }}</b> ({{ i.program_type }})</p>
+        {% endfor %}
+    </div>
+    <div class="thursday">
+        <h2>Телепрограма на четвер</h2>
+        {% for i in thursday %}
+            <p>{{ i.time_program }} <b>{{ i.name_program }}</b> ({{ i.program_type }})</p>
+        {% endfor %}
+    </div>
+</div>
+<div class="bloock3">
+    <div class="friday">
+        <h2>Телепрограма на п'ятницю</h2>
+        {% for i in friday %}
+            <p>{{ i.time_program }} <b>{{ i.name_program }}</b> ({{ i.program_type }})</p>
+        {% endfor %}
+    </div>
+    <div class="saturday">
+        <h2>Телепрограма на суботу</h2>
+        {% for i in saturday %}
+            <p>{{ i.time_program }} <b>{{ i.name_program }}</b> {{ i.program_type }}</p>
+        {% endfor %}
+    </div>
+
+</div>
+<div class="sunday">
+    <h2>Телепрограма на неділю</h2>
+    {% for i in sunday %}
+        <p>{{ i.time_program }} <b>{{ i.name_program }}</b> {{ i.program_type }}</p>
+    {% endfor %}
+</div>
+</body>
+</html>
